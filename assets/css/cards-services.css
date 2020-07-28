@@ -1,0 +1,128 @@
+#services-cards {
+
+  justify-content: center;
+  align-items: center;
+  background: #48ba95;
+  padding: 2% 0 3%;
+}
+
+#services-cards > div > div {
+  display: flex;
+  width: 100%;
+}
+
+#services-cards .container {
+  position: relative;
+  width: 70%;
+  display: flex;
+}
+
+#services-cards .row {
+  margin: 0 auto;
+}
+
+#services-cards .container .card {
+  position: relative;
+  height: 130px;
+  background: #fff;
+  border: 1px dashed #48ba95;
+  display: flex;
+  width: 150px;
+  padding: 7px;
+  margin: 10px auto;
+  border-radius: 22px;
+
+}
+
+#services-cards .container .card .imgBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #48ba95;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+  border-radius: 20px;
+
+
+}
+
+#services-cards .container .card:hover .imgBx {
+  width: 90px;
+  height: 90px;
+  left: -70px;
+  top: calc(50% - 45px);
+  transition: 0.5s ease-in-out;
+  border: 0;
+  }
+
+#services-cards .container .card:hover .img-color1 {
+  background: #907847;
+}
+
+#services-cards .container .card:hover .img-color2 {
+  background: #ff3366;
+}
+
+#services-cards .container .card:hover .img-color3 {
+  background: #9933cc;
+}
+
+#services-cards .container .card .imgBx img {
+  max-width: 70px;
+  transition: 0.5s ease-in-out;
+}
+
+#services-cards .container .card:hover .imgBx img {
+  max-width: 60%;
+  transform: rotate(-8deg);
+}
+
+.rocket {
+  transform: rotate(12deg);
+
+}
+
+#services-cards .container .card .content {
+  position: absolute;
+  right: 0;
+  width: calc(100% - 10px);
+  top: 0;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#services-cards .container h3 {
+  line-height: 1.2;
+  margin-bottom: 5px;
+  font-size: 0.9em;
+
+}
+
+#services-cards .container h3.title-card1 {
+   color: #907847;
+}
+
+#services-cards .container h3.title-card2 {
+   color: #ff3366;
+}
+
+#services-cards .container h3.title-card3 {
+   color: #9933cc;
+}
+
+#services-cards .container P {
+  line-height: 1.3;
+  margin: 0 5px;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+f
